@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block main_body %}
+    <div style="margin-top: 55px;">
+        <section>
+            <!-- Start: Pretty Registration Form -->
+            <div class="row register-form">
+                <div class="col-md-8 offset-md-2" style="max-width: 700px;margin: 0 auto;">
+                    <form class="custom-form" style="background: rgba(255,255,255,0.25);backdrop-filter: blur(2px);border-radius: 20px;">
+                        <h1>Login</h1>
+                        <div class="row form-group">
+                            <div class="col-sm-4 label-column"><label class="col-form-label" for="email-input-field">Email </label></div>
+                            <div class="col-sm-6 input-column"><input class="form-control glass" type="email"></div>
+                        </div>
+                        <div class="row form-group" style="margin-bottom: 15px;">
+                            <div class="col-sm-4 label-column"><label class="col-form-label" for="pawssword-input-field">Password </label></div>
+                            <div class="col-sm-6 input-column"><input class="form-control glass" type="password"></div>
+                        </div>
+                        <p><a href="#" style="font-size: 10px;">Forgot Password?</a></p><button class="btn btn-info" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div><!-- End: Pretty Registration Form -->
+        </section>
+    </div><!-- Start: Footer Dark -->
+{% endblock main_body %}

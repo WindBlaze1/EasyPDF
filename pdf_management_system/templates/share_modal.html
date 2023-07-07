@@ -1,0 +1,25 @@
+{% extends 'PDF.html' %}
+
+{% block modal %}
+<div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path>
+                    </svg>&nbsp;Share the PDF</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-start">
+                <form>
+                    <p class="text-center">Give access to:</p>
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">A list of users [write comma separated emails]:</label></div><textarea class="form-control" placeholder="some1@example.com, some2@example.com, ..."></textarea>
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Anyone with the link</label></div>
+                </form>
+                <p>PDF's Unique Link:&nbsp;<a href="#">soaidjoiefnoaifmoafaef.com</a></p>
+            </div>
+            <div class="modal-footer"><button class="btn btn-primary" type="button" style="width: 132px;">Save</button></div>
+        </div>
+    </div>
+</div>
+{% endblock modal %}
